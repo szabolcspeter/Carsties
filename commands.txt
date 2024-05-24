@@ -17,6 +17,8 @@ dotnet ef database drop
 dotnet watch --no-hot-reload
 git init
 dotnet new gitignore
+git add .
+git commit -m "Auction service"
 
 
 service related commands (go to solution root path):
