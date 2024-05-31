@@ -23,3 +23,10 @@ git commit -m "Auction service"
 
 service related commands (go to solution root path):
 docker compose up -d
+
+
+Section 3)
+-------------------------
+// cd solution level (Carsties)
+dotnet new webapi -o src/SearchService --use-controllers
+dotnet sln add src/SearchService/
