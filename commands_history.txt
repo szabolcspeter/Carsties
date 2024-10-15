@@ -56,3 +56,12 @@ cd ../Contracts/
 rm -i Class1.cs 
 // go to Auction service
 dotnet ef migrations add Outbox
+
+
+service related commands (go to solution root path):
+docker compose down
+docker ps -a -q
+docker volume ls
+docker volume rm carsties_pgdata
+docker volume rm carsties_mongodata
+docker compose up -d
