@@ -65,3 +65,12 @@ docker volume ls
 docker volume rm carsties_pgdata
 docker volume rm carsties_mongodata
 docker compose up -d
+
+Section 5)
+-------------------------
+// cd solution level (Carsties)
+dotnet new install Duende.IdentityServer.Templates
+dotnet new isaspid -o src/IdentityService // Do you want to run this action [Y(yes)|N(no)]? N
+dotnet sln add src/IdentityService/
+cd src/IdentityService/
+dotnet watch --no-hot-reload
