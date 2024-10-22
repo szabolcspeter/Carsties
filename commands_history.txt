@@ -74,3 +74,5 @@ dotnet new isaspid -o src/IdentityService // Do you want to run this action [Y(y
 dotnet sln add src/IdentityService/
 cd src/IdentityService/
 dotnet watch --no-hot-reload
+rm -rf Data/Migrations/ // because the original migration was based on Sqlite provider
+dotnet ef migrations add "InitialCreate" -o Data/Migrations
