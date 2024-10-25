@@ -1,4 +1,4 @@
-Section 2)
+Auction microservice)
 -------------------------
 mkdir -vp Neil/Carsties
 cd Neil/Carsties/
@@ -26,7 +26,7 @@ service related commands (go to solution root path):
 docker compose up -d
 
 
-Section 3)
+Search microservice)
 -------------------------
 // cd solution level (Carsties)
 dotnet new webapi -o src/SearchService --use-controllers
@@ -42,7 +42,7 @@ docker volume rm carsties_mongodata
 docker compose up -d
 
 
-Section 4)
+RabbitMQ)
 -------------------------
 // cd solution level (Carsties)
 dotnet new classlib -o src/Contracts
@@ -66,7 +66,7 @@ docker volume rm carsties_pgdata
 docker volume rm carsties_mongodata
 docker compose up -d
 
-Section 5)
+Identity Server)
 -------------------------
 // cd solution level (Carsties)
 dotnet new install Duende.IdentityServer.Templates
