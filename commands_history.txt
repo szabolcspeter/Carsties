@@ -66,6 +66,7 @@ docker volume rm carsties_pgdata
 docker volume rm carsties_mongodata
 docker compose up -d
 
+
 Identity Server)
 -------------------------
 // cd solution level (Carsties)
@@ -76,3 +77,9 @@ cd src/IdentityService/
 dotnet watch --no-hot-reload
 rm -rf Data/Migrations/ // because the original migration was based on Sqlite provider
 dotnet ef migrations add "InitialCreate" -o Data/Migrations
+
+
+Gateway Service)
+-------------------------
+dotnet new web -o src/GatewayService
+dotnet sln add src/GatewayService/
