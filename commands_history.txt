@@ -91,3 +91,4 @@ Dockerizing)
 docker build -f src/AuctionService/Dockerfile -t testing123 . // just for initial test
 docker compose build auction-svc
 docker compose up -d
+docker compose build search-svc
